@@ -34,7 +34,7 @@ class Carrito{
 const productosDisponibles = [
     new Producto(1, "Paquete Silver", 1500),
     new Producto(2, "Paquete Platinium", 2500),
-    new Producto(3, "Paquete Gold", 4000),
+    new Producto(2, "Paquete Gold", 4000)
 ];
 
 const carrito = new Carrito();
