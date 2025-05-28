@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Productos</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/productos.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+            <div class="logo">
+                <img class="img-logo" src="../../img/logo.png" alt="">
+            </div>
+        <ul>
+          <li><a href="dashboard.html">Panel Principal</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+        </ul>
+        <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+        <div class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Productos</h1>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img
+              src="https://scontent.fpac1-4.fna.fbcdn.net/v/t1.6435-9/197162444_213545650603572_4300353056170289424_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PX9WWibueLcQ7kNvwEGboqe&_nc_oc=AdkS82vTy1ikaUCqp14iGZhjduDFAr22B5DHYqS8F_ybBsM72UaqjDlvI16YRhRwJt4&_nc_zt=23&_nc_ht=scontent.fpac1-4.fna&_nc_gid=OOJEvvxknaIj_oqmN61Y-g&oh=00_AfIlE8PDR1ruAoCaaVrUMLXlgEYARDcaxDiG9EhI1iSH2g&oe=685C86FF"
+              alt=""
+            />
+            <h3>Paquete Silver</h3>
+            <p>Q 1500.00</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://scontent.fpac1-2.fna.fbcdn.net/v/t1.6435-9/196988233_213545717270232_1318533786713536112_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Y78GvOwxZ0YQ7kNvwHx_Mxb&_nc_oc=AdmweIp7HWPcKzZ99G1gvk-_PehrlZKJsGEBFBBTqXkL9Pkyxn9EwX66984UBc8X-Uk&_nc_zt=23&_nc_ht=scontent.fpac1-2.fna&_nc_gid=Tj15bk1PGfHuB3VaUxPD_Q&oh=00_AfIhKXzYlgvTTm3PF_gMlDzr524ucA74YLJH5XlneEU9CQ&oe=685C9C7B"
+              alt=""
+            />
+            <h3>Paquete Platinium</h3>
+            <p>Q 2500.00</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://scontent.fpac1-3.fna.fbcdn.net/v/t1.6435-9/197514886_213545683936902_6657964336314966533_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VFhOPCuYYYIQ7kNvwG4dRRg&_nc_oc=AdlH3M5x3g5xlXyphByOTHt9cqiCX4DaSa6j9N3d-vXcsMqXEXodaVULLTBYWvWCefQ&_nc_zt=23&_nc_ht=scontent.fpac1-3.fna&_nc_gid=DQyynX7UlteRzudhW59gPA&oh=00_AfLhhYQyV02acZZT68UR8qmDK6f4L2-L3PRYgyzCmrNumg&oe=685C9BB2"
+              alt=""
+            />
+            <h3>Paquete Gold</h3>
+            <p>Q 4000.00</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-productos"></ul>
+            <p><strong>Total:</strong> <span id="total">0</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../js/carrito.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/logout.js"></script>
+  </body>
+</html>
